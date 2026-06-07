@@ -175,17 +175,10 @@ Sinh viên cần nộp đầy đủ các nội dung sau:
 Sinh viên cập nhật thông tin cá nhân tại đây:
 
 ```text
-<<<<<<< HEAD
 Họ và tên:Nguyễn Quốc Thái
 Mã số sinh viên:110124165
 Lớp:DA24TTA
 Tên đề tài:VinFast Page
-=======
-Họ và tên:
-Mã số sinh viên:
-Lớp:
-Tên đề tài:
->>>>>>> 2285144e179a8c481f23673ce31b98292e90ba5d
 Liên kết GitHub repository:
 Liên kết GitHub Pages:
 ```
