@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="web-title">VinFast Chi Tiết Xe</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container header-content">
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/logo.png" alt="VinFast Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">TRANG CHỦ</a></li>
+                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="sanpham.html">SẢN PHẨM</a></li>
+                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section">
+        <div class="chitiet-header text-center" style="margin-bottom: 50px;">
+            <h1 class="section-title" id="car-name">VinFast VF 8</h1>
+            <p style="font-size: 1.2rem; color: #777;" id="car-subtitle">SUV Cỡ Trung Thời Thượng & Thông Minh</p>
+        </div>
+        
+        <div class="chitiet-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+            <div class="chitiet-image">
+                <img src="../assets/images/vf8.jpg" alt="VinFast Chi Tiết" id="car-main-img" style="border-radius: 10px; width: 100%;">
+                <div style="display: flex; gap: 10px; margin-top: 15px; justify-content: center;">
+                    <img src="../assets/images/vf8.jpg" id="thumb-1" style="width: 80px; border-radius: 5px; cursor: pointer; border: 2px solid #0056D2;">
+                </div>
+            </div>
+            <div class="chitiet-info">
+                <h3 style="color: #0056D2; margin-bottom: 15px; font-size: 1.5rem;" id="car-price">Giá từ: 1.290.000.000 VND</h3>
+                <p style="margin-bottom: 25px;" id="car-desc">VF 8 là mẫu xe SUV điện cỡ trung ấn tượng, nổi bật với thiết kế Ý thời thượng, khả năng vận hành mạnh mẽ và hàng loạt công nghệ an toàn, thông minh tiên tiến, phù hợp cho mọi nhu cầu di chuyển.</p>
+                
+                <h4 style="margin-bottom: 10px;">Thông Số Nổi Bật:</h4>
+                <ul style="margin-bottom: 30px; list-style: disc; margin-left: 20px;" id="car-specs">
+                    <li>Phạm vi di chuyển (WLTP): 420 - 471 km</li>
+                    <li>Hệ dẫn động: AWD (2 cầu)</li>
+                    <li>Công suất tối đa: 300 kW (402 mã lực)</li>
+                    <li>Gia tốc 0-100 km/h: 5,5 giây</li>
+                    <li>Hệ thống túi khí: 11 túi khí</li>
+                </ul>
+                
+                <a href="lienhe.html" class="btn">ĐĂNG KÝ LÁI THỬ</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="copy text-center">
+                <p>&copy; 2026 Đồ án môn học - Xây dựng website VinFast.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+        const databaseXe = {
+            "vf3": {
+                name: "VinFast VF 3",
+                subtitle: "Xe Đô Thị Nhỏ Gọn & Cá Tính",
+                price: "Giá từ: 240.000.000 VND",
+                image: "../assets/images/vf3.jpg",
+                desc: "VF 3 là mẫu xe điện mini đô thị mang tính cách mạng, sở hữu thiết kế vuông vắn, mạnh mẽ, gầm cao năng động cùng bảng màu sắc ngoại thất vô cùng phong phú, giúp bạn khẳng định phong cách cá nhân trên mọi tuyến phố.",
+                specs: [
+                    "Quãng đường di chuyển (NEDC): ~210 km / một lần sạc đầy",
+                    "Thời gian sạc nhanh (10%-70%): Chỉ khoảng 36 phút",
+                    "Công suất tối đa: 32 kW (43 mã lực)",
+                    "Chiều dài tổng thể: 3.190 mm",
+                    "Khoảng sáng gầm xe: 191 mm năng động"
+                ]
+            },
+            "vf5": {
+                name: "VinFast VF 5 Plus",
+                subtitle: "Lựa Chọn Sành Điệu Cho Cuộc Sống Năng Động",
+                price: "Giá từ: 468.000.000 VND",
+                image: "../assets/images/vf5.jpg",
+                desc: "VF 5 Plus là mẫu ô tô điện thông minh phân khúc A-SUV, sở hữu thiết kế hiện đại, phối màu cá tính, tối ưu hóa không gian nội thất rộng rãi cùng các tính năng an toàn vượt trội hàng đầu phân khúc.",
+                specs: [
+                    "Phạm vi di chuyển (NEDC): ~326 km / một lần sạc đầy",
+                    "Hệ dẫn động: FWD (Cầu trước)",
+                    "Công suất tối đa: 100 kW (134 mã lực)",
+                    "Mô-men xoắn cực đại: 135 Nm",
+                    "Hệ thống an toàn: 6 túi khí bảo vệ"
+                ]
+            },
+            "vf6": {
+                name: "VinFast VF 6",
+                subtitle: "Dẫn Lối Đam Mê - Khởi Đầu Kỷ Nguyên Xanh",
+                price: "Giá từ: 675.000.000 VND",
+                image: "../assets/images/vf6.jpg",
+                desc: "Được nhào nặn bởi studio danh tiếng Torino Design (Ý), VF 6 là sự kết hợp hoàn hảo giữa những đường nét thanh lịch phong cách châu Âu, trải nghiệm vận hành êm ái và không gian công nghệ thông minh tinh tế cho gia đình.",
+                specs: [
+                    "Phạm vi di chuyển (WLTP): ~399 km - 410 km",
+                    "Hệ dẫn động: FWD (Cầu trước)",
+                    "Công suất tối đa: 150 kW (201 mã lực)",
+                    "Mô-men xoắn cực đại: 310 Nm",
+                    "Hệ thống trợ lái nâng cao: ADAS cấp độ 2 thông minh"
+                ]
+            },
+            "vf7": {
+                name: "VinFast VF 7",
+                subtitle: "Đột Phá Thiết Kế - Đẳng Cấp Thượng Lưu",
+                price: "Giá từ: 850.000.000 VND",
+                image: "../assets/images/vf7.jpg",
+                desc: "Sở hữu ngôn ngữ thiết kế 'Vũ trụ phi thuyền' (Asymmetric Aerospace), VF 7 thuộc phân khúc C-SUV mang vẻ đẹp đầy phá cách của tương lai kết hợp cùng hiệu suất động cơ cực kỳ mạnh mẽ tương đương các dòng xe thể thao.",
+                specs: [
+                    "Phạm vi di chuyển (WLTP): ~431 km - 496 km",
+                    "Hệ dẫn động: AWD (2 cầu toàn thời gian bản Plus)",
+                    "Công suất tối đa: 260 kW (349 mã lực)",
+                    "Gia tốc 0-100 km/h: Chỉ trong 5,8 giây",
+                    "Tiện ích cao cấp: Trần kính toàn cảnh Panorama"
+                ]
+            },
+            "vf8": {
+                name: "VinFast VF 8",
+                subtitle: "SUV Cỡ Trung Thời Thượng & Thông Minh",
+                price: "Giá từ: 1.290.000.000 VND",
+                image: "../assets/images/vf8.jpg",
+                desc: "VF 8 là mẫu xe SUV điện cỡ trung ấn tượng, nổi bật với thiết kế Ý thời thượng, khả năng vận hành mạnh mẽ và hàng loạt công nghệ an toàn, thông minh tiên tiến, phù hợp cho mọi nhu cầu di chuyển.",
+                specs: [
+                    "Phạm vi di chuyển (WLTP): 420 - 471 km",
+                    "Hệ dẫn động: AWD (2 cầu)",
+                    "Công suất tối đa: 300 kW (402 mã lực)",
+                    "Gia tốc 0-100 km/h: 5,5 giây",
+                    "Hệ thống túi khí: 11 túi khí"
+                ]
+            },
+            "vf9": {
+                name: "VinFast VF 9",
+                subtitle: "SUV Cỡ Lớn Sang Trọng & Đẳng Cấp",
+                price: "Giá từ: 1.500.000.000 VND",
+                image: "../assets/images/vf9.jpg",
+                desc: "VF 9 là dòng xe SUV điện phân khúc E cao cấp nhất hiện tại của VinFast. Xe mang kiểu dáng bề thế, trang bị tùy chọn hàng ghế cơ trưởng thương gia tích hợp tính năng massage, sưởi và thông gió mang lại sự thư thái tuyệt đối.",
+                specs: [
+                    "Phạm vi di chuyển (WLTP): ~438 km - 626 km",
+                    "Hệ dẫn động: AWD (2 cầu toàn thời gian mạnh mẽ)",
+                    "Công suất tối đa: 300 kW (402 mã lực)",
+                    "Mô-men xoắn cực đại: 620 Nm",
+                    "Hệ thống túi khí: 11 túi khí bảo vệ toàn diện"
+                ]
+            }
+        };
+
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const codeXe = urlParams.get('xe');
+
+        
+        if (codeXe && databaseXe[codeXe]) {
+            const data = databaseXe[codeXe];
+
+            
+            document.getElementById('web-title').innerText = data.name + " - Chi Tiết";
+            document.getElementById('car-name').innerText = data.name;
+            document.getElementById('car-subtitle').innerText = data.subtitle;
+            document.getElementById('car-price').innerText = data.price;
+            document.getElementById('car-desc').innerText = data.desc;
+
+            
+            document.getElementById('car-main-img').src = data.image;
+            document.getElementById('car-main-img').alt = data.name;
+            document.getElementById('thumb-1').src = data.image;
+
+            
+            const ulSpecs = document.getElementById('car-specs');
+            ulSpecs.innerHTML = ""; 
+            data.specs.forEach(function(spec) {
+                const li = document.createElement('li');
+                li.innerText = spec;
+                ulSpecs.appendChild(li); 
+            });
+        }
+    </script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

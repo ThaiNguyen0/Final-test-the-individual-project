@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - VinFast</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 50px;
+        }
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact-form textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        .contact-form input:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #0056D2;
+            box-shadow: 0 0 5px rgba(0,86,210,0.1);
+        }
+        .contact-info .info-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            align-items: center;
+        }
+        .contact-info .info-item .icon {
+            font-size: 1.5rem;
+            color: #0056D2;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="container header-content">
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/logo.png" alt="VinFast Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">TRANG CHỦ</a></li>
+                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="sanpham.html">SẢN PHẨM</a></li>
+                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section">
+        <h1 class="section-title text-center">Liên Hệ Với Chúng Tôi</h1>
+        
+        <div class="contact-wrapper">
+            <div class="contact-form-col">
+                <h3 style="margin-bottom: 10px; color: #0056D2;">Đăng Ký Nhận Tư Vấn & Lái Thử</h3>
+                <p style="margin-bottom: 30px; color: #777;">Vui lòng điền đầy đủ thông tin bên dưới, chúng tôi sẽ sớm liên hệ.</p>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Họ và Tên*</label>
+                        <input type="text" id="name" name="name" placeholder="Ví dụ: Nguyễn Văn A" required>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại*</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Số điện thoại của bạn" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" placeholder="Email của bạn" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="car">Dòng xe quan tâm*</label>
+                        <select id="car" name="car" required>
+                            <option value="">-- Chọn dòng xe --</option>
+                            <option value="VF 3">VinFast VF 3</option>
+                            <option value="VF 5">VinFast VF 5 </option>
+                            <option value="VF 6">VinFast VF 6</option>
+                            <option value="VF 7">VinFast VF 7</option>
+                            <option value="VF 8">VinFast VF 8</option>
+                            <option value="VF 9">VinFast VF 9</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Lời nhắn (Tùy chọn)</label>
+                        <textarea id="message" name="message" placeholder="Ví dụ: Đăng ký lái thử tại Hà Nội..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">GỬI YÊU CẦU</button>
+                </form>
+            </div>
+
+            <div class="contact-info-col" style="background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); align-self: start;">
+                <h4 style="margin-bottom: 25px; color: #0056D2;">Thông Tin Liên Hệ</h4>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="icon">&#128222;</div> <div>
+                            <p style="font-weight: bold;">Hotline:</p>
+                            <p>0913573987</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">&#128231;</div> <div>
+                            <p style="font-weight: bold;">Email:</p>
+                            <p>quocthainguyen247@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">&#128205;</div> <div>
+                            <p style="font-weight: bold;">Trụ sở chính:</p>
+                            <p>Số 1, Đường Ngô Quyền, khu công nghiệp Long Đức, Vĩnh Long</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="copy text-center">
+                <p>&copy; 2026 Đồ án môn học - Xây dựng website VinFast.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/validation.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

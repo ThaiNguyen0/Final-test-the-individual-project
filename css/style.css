@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f8f9fa;
+    background-image: radial-gradient(circle at top left, rgba(0, 86, 210, 0.12), transparent 28%),
+                      radial-gradient(circle at bottom right, rgba(0, 86, 210, 0.08), transparent 24%);
+}
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../assets/images/bg1.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center { text-align: center; }
+
+.section { padding: 60px 0; }
+
+.section-title {
+    font-size: 2rem;
+    color: #0056D2; 
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #0056D2;
+    color: white;
+    border: 2px solid #0056D2;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: transparent;
+    color: #0056D2;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #0056D2;
+    color: #0056D2;
+}
+
+.btn-outline:hover {
+    background-color: #0056D2;
+    color: white;
+}
+
+header {
+    background-color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; 
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: #555;
+    padding: 10px 0;
+    position: relative;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #0056D2;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0056D2;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    color: #0056D2;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: #001A33; 
+    color: #ccc;
+    padding: 50px 0 20px 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-col ul li { margin-bottom: 10px; }
+
+.footer-col ul li a:hover { color: white; }
+
+.copy {
+    border-top: 1px solid #1a3a5a;
+    padding-top: 20px;
+}
