@@ -179,6 +179,6 @@ Họ và tên:Nguyễn Quốc Thái
 Mã số sinh viên:110124165
 Lớp:DA24TTA
 Tên đề tài:VinFast Page
-Liên kết GitHub repository:
-Liên kết GitHub Pages:
+Liên kết GitHub repository:https://github.com/ThaiNguyen0/Final-test-the-individual-project.git
+Liên kết GitHub Pages:https://thainguyen0.github.io/Final-test-the-individual-project/
 ```
